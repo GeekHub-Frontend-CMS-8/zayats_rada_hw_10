@@ -1,0 +1,147 @@
+.work-page
+  background: url("../img/work-bg.png") no-repeat center
+  background-size: cover
+  background-color: #81a256
+  width: 100%
+  height: auto
+  padding-top: 35px
+  padding-bottom: 124px
+
+.works-navigation
+  display: flex
+  nav
+    display: flex
+    a
+      margin-left: 50px
+      text-decoration: none
+      color: #fff
+      font-size: 18px
+      font-weight: 400
+      line-height: 60px
+      &:hover
+        content: ""
+        top: 47px
+        left: 0
+        right: 0
+        background-color: #a1ca6c
+        border-radius: 5px
+        padding: 17px
+
+.work-content
+  h1
+    padding-top: 100px
+    text-align: center
+    color: #ffffff
+    font-size: 60px
+    font-weight: 300
+    line-height: 58px
+    text-transform: uppercase
+    margin-bottom: 34px
+
+.work-content-little
+  color: #ffffff
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  margin-bottom: 58px
+  text-align: center
+
+.portfolio-area
+  margin: 0 auto
+  padding-top: 22px
+  padding-bottom: 22px
+  text-align: center
+  border-top: 1px solid #94b963
+  border-bottom: 1px solid #94b963
+  .portfolio
+    color: white
+    font-size: 20px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+
+.container
+  margin: 0 auto
+
+input[type="radio"]
+  display: none
+
+label
+  text-align: center
+  color: #fff
+  padding: 8px
+  cursor: pointer
+  font-size: 16px
+  font-weight: 700
+  line-height: 24px
+
+input[type="radio"]
+  &[id="all"]:checked
+    + label
+      background: #f5c149
+      border-radius: 5px
+    ~
+    .color, .logo
+      width: 0
+      height: 0
+      padding: 0
+      margin: 0
+      opacity: 0
+  &[id="photography"]:checked
+    + label
+      background: #f5c149
+      border-radius: 5px
+    ~
+    .all, .logo
+      width: 0
+      height: 0
+      padding: 0
+      margin: 0
+      opacity: 0
+  &[id="logo"]:checked
+    + label
+      background: #f5c149
+      border-radius: 5px
+    ~
+    .all, .photography
+      width: 0
+      height: 0
+      padding: 0
+      margin: 0
+      opacity: 0
+  &[id="web"]:checked
+    + label
+      background: #f5c149
+      border-radius: 5px
+    ~
+    .web, .logo
+      width: 0
+      height: 0
+      padding: 0
+      margin: 0
+      opacity: 0
+
+.portfolio-gallery
+  width: 1140px
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  margin-top: 47px
+
+.item
+  margin-bottom: 20px
+
+.gallery_bubble
+  background: #eeeeee
+  width: 260px
+  padding: 8px 42px
+
+.bubble_text
+  color: #727272
+  text-transform: uppercase
+  text-align: center
+  font-size: 14px
+  font-weight: 400
+
+
+
