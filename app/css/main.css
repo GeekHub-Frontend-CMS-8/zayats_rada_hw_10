@@ -28,25 +28,64 @@ ol {
   line-height: 60px;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#site-navigation {
+  display: block;
+  height: 48px;
 }
 
-.navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#site-navigation #main-menu,
+#site-navigation > input {
+  display: none;
 }
 
-.navigation nav a {
-  margin-left: 50px;
+#site-navigation > label {
+  display: block;
+  font-size: 36px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  width: 36px;
+  padding: 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#site-navigation > input:checked + #main-menu {
+  display: block;
+  clear: both;
+  top: 36px;
+  position: relative;
+  color: #fff;
+}
+
+#site-navigation ul li {
+  display: block;
+  list-style: none;
+  padding: 0 20px;
+}
+
+#site-navigation a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 60px;
+}
+
+@media only screen and (min-device-width: 768px) {
+  #site-navigation {
+    height: auto;
+  }
+  #site-navigation #main-menu {
+    display: block;
+  }
+  #site-navigation > label {
+    display: none;
+  }
+  #site-navigation ul li {
+    display: inline-block;
+  }
 }
 
 body {
@@ -62,63 +101,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 49px;
-}
-
-.main-page__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  font-family: Damion, sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 60px;
-}
-
-.main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-navigation nav a {
-  margin-left: 50px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 60px;
-}
-
-.main-navigation nav a:hover {
-  content: "";
-  top: 47px;
-  left: 0;
-  right: 0;
-  background-color: #74c7d5;
-  border-radius: 5px;
-  padding: 17px;
 }
 
 [data-am-fadeshow] {
@@ -914,37 +896,6 @@ body {
   padding-bottom: 124px;
 }
 
-.services-page-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.services-page-navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.services-page-navigation nav a {
-  margin-left: 50px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 60px;
-}
-
-.services-page-navigation nav a:hover {
-  content: "";
-  top: 47px;
-  left: 0;
-  right: 0;
-  background-color: #df5c64;
-  border-radius: 5px;
-  padding: 17px;
-}
-
 .services-content {
   width: 100%;
   margin: 0 auto;
@@ -1335,37 +1286,6 @@ body {
   padding-bottom: 124px;
 }
 
-.works-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.works-navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.works-navigation nav a {
-  margin-left: 50px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 60px;
-}
-
-.works-navigation nav a:hover {
-  content: "";
-  top: 47px;
-  left: 0;
-  right: 0;
-  background-color: #a1ca6c;
-  border-radius: 5px;
-  padding: 17px;
-}
-
 .work-content h1 {
   padding-top: 100px;
   text-align: center;
@@ -1541,37 +1461,6 @@ input[type="radio"][id="web"]:checked .web, input[type="radio"][id="web"]:checke
   height: auto;
   padding-top: 35px;
   padding-bottom: 124px;
-}
-
-.footer-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-navigation nav a {
-  margin-left: 50px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 60px;
-}
-
-.footer-navigation nav a:hover {
-  content: "";
-  top: 47px;
-  left: 0;
-  right: 0;
-  background-color: #82c8bd;
-  border-radius: 5px;
-  padding: 17px;
 }
 
 .contacts-content {

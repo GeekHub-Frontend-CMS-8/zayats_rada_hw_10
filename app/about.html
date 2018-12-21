@@ -21,22 +21,27 @@
 <section class="about-page">
 
     <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between align-items-center">
             <div class="col-md-3">
                 <div class="logo-container">
                     <p>acrostia</p>
                 </div>
             </div>
+
             <div class="col-md-6">
-                <div class="about-page-navigation">
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="services.html">Services</a>
-                        <a href="about.html">About</a>
-                        <a href="works.html">Work</a>
-                        <a href="contacts.html">Contacts</a>
-                    </nav>
-                </div>
+                <nav id="site-navigation" aria-label="Menu">
+
+                    <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+                    <input id="toggle-mobile-menu" type="checkbox" />
+
+                    <ul id="main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Work</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
